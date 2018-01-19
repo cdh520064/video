@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>视频 —— 列表+详情</title>
+<link rel="stylesheet" type="text/css"  href="css/video-js.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<!-- If you'd like to support IE8 -->
+<script type="text/javascript" src="js/videojs-ie8.min.js"></script>
+<script type="text/javascript" src="js/video.min.js"></script>	
+</head>
+
+<body>
+	<div class="video_detail_main">
+    	<div class="video_detail">
+            <div class="video_detail_box">
+            	 <video id="example_video1" class="video-js" controls preload="auto" poster="images/vedio.png" data-setup="{}">
+                    <source src="1502264309.mp4" type="video/mp4">
+                 </video>
+                 <script type="text/javascript">
+                    var myPlayer = videojs('example_video1');
+                    videojs("my-video").ready(function(){
+                        var myPlayer = this;
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
